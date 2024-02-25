@@ -11,7 +11,15 @@ function FileInput() {
     reader.readAsText(file);
   }
 
-  return <input type="file" onChange={handleFileUpload} />;
+  const fileInputStyle = {
+    margin: "1rem 0",
+    fontSize: "1rem",
+    display: "block",
+  };
+
+  return (
+    <input style={fileInputStyle} type="file" onChange={handleFileUpload} />
+  );
 }
 
 export default FileInput;
