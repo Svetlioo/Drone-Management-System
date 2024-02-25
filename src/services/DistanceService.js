@@ -23,10 +23,10 @@ class DistanceService {
 
     warehouses.forEach((warehouse) => {
       const distance = this.calculateDistance(
-        warehouse.x,
-        warehouse.y,
-        customer.coordinates.x,
-        customer.coordinates.y
+        warehouse.position.i,
+        warehouse.position.j,
+        customer.position.i,
+        customer.position.j
       );
 
       if (distance < minDistance) {
