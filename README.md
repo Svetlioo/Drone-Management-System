@@ -21,8 +21,6 @@ Before diving into the features and details of this project, it's important to k
 
 Once the server is running, open your browser and visit `http://localhost:<your_port>` to start using the application.
 
-Replace `<your_port>` with the port number your server is running on. If you didn't set a specific port, it's likely running on port 3000, so you would visit `http://localhost:3000`.
-
 Now, let's dive into what this project is all about.
 
 ## Project Overview
