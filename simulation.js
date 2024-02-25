@@ -23,7 +23,11 @@ class Simulation {
   loadConfig() {
     for (let warehouse of this.config.warehouses) {
       this.warehouses.push(
-        new Warehouse(warehouse.x, warehouse.y, warehouse.name)
+        new Warehouse(
+          warehouse.x,
+          warehouse.y,
+          warehouse.name || warehouse.Name
+        )
       );
     }
     for (let customer of this.config.customers) {
