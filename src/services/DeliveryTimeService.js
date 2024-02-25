@@ -22,20 +22,21 @@ class DeliveryTimeService {
         warehouses,
         customer
       );
-
+      console.log("Warehouse:", warehouse);
+      console.log("Customer:", customer);
       // Calculate the time it takes to go from the warehouse to the customer in steps (not length of the path) for every step - 1 minute
       const distance =
         this.distanceService.calculateNumberOfStepsWithoutDiagonal(
-          warehouse.x,
-          warehouse.y,
-          customer.coordinates.x,
-          customer.coordinates.y
+          warehouse.position.i,
+          warehouse.position.j,
+          customer.position.i,
+          customer.position.j
         );
 
-      console.log("Warehouse X:", warehouse.x);
-      console.log("Warehouse Y:", warehouse.y);
-      console.log("Customer X:", customer.coordinates.x);
-      console.log("Customer Y:", customer.coordinates.y);
+      console.log("Warehouse X:", warehouse.position.i);
+      console.log("Warehouse Y:", warehouse.position.j);
+      console.log("Customer X:", customer.position.i);
+      console.log("Customer Y:", customer.position.j);
       console.log("Distance from warehouse to customer:", distance);
 
       totalTime += 5; // 5 minutes to load the drone
