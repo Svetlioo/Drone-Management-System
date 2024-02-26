@@ -45,6 +45,21 @@ This experience not only improved my debugging skills but also allowed me to bec
 - Real-time updates and support for concurrent users through WebSockets.
 - User orders can be added through a form and are updated in real-time.
 
+![Grid Layout](src/assets/grid_photo.png)
+This image shows the grid layout and legend used for the drone movement simulation.
+
+![Order and Delivery Time](src/assets/order_and_deliverytime.png)
+This image displays the order input interface and the calculated total delivery time.
+
+![Orders Display](src/assets/orders_display.png)
+This image shows how orders are displayed in the application, including details such as order ID, coordinates, and status. The orders are also grouped by their status, indicating whether they are in delivery, to be delivered, or already delivered.
+
+![Simulation State](src/assets/simulation_state.png)
+This image provides the different categories of the simulation state at a particular moment, currently not expanded.
+
+![Drone Movement](src/assets/movement.png)
+This image illustrates test movement data of drones in the grid, demonstrating movement from and to different grid points and calculating paths with and without diagonal movement enabled.
+
 ## Conclusion
 
 Thank you for taking the time to explore this project. Your interest and feedback are greatly appreciated. I hope you find the work I've done here valuable and enjoyable.
